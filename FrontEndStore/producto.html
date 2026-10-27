@@ -44,8 +44,13 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2026.</p>
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados <span id="year"></span>.</p>
     </footer>
+
+    <!-- Código JS directamente en el HTML -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     
 </body>
 </html>
